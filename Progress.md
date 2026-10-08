@@ -1,15 +1,18 @@
-GOALS:
+# Project Progress
+
+## GOALS
 
 - [x] Implement Luhn validation
 - [x] Test Luhn validation with different numbers
-- [ ] Understand pseudo-random number generation
-- [ ] Implement a pseudo-random number generator without `<random>`
-- [ ] Generate a sequence of digits
+- [x] Understand pseudo-random number generation
+- [x] Implement a pseudo-random number generator without `<random>`
+- [x] Generate a sequence of digits
 - [ ] Calculate the Luhn check digit
 - [ ] Generate complete Luhn-valid numbers
 - [ ] Test generated numbers with the validator
 - [ ] Improve the project structure
 
+---
 
 ## Commit 1 — Luhn Validator
 
@@ -43,3 +46,39 @@ Tested the program with:
 
 ```text
 8273123273520569
+```
+
+---
+
+## Commit 2 — Initial Pseudo-Random Digit Generator
+
+### Status
+
+Initial implementation completed
+
+### What I did
+
+- Created `random_gen.cpp`
+- Explored `std::chrono` to obtain a time-based seed
+- Implemented a Linear Congruential Generator (LCG)
+- Used fixed parameters for the generator
+- Generated a sequence of states using the LCG recurrence
+- Converted the generated states into decimal digits using modulo 10
+- Printed the generated digits
+
+### LCG Logic
+
+The generator uses the recurrence relation:
+
+[
+x\_{n+1}=(ax_n+c)\bmod m
+]
+
+Current parameters:
+
+- Multiplier: `a = 17`
+- Increment: `c = 5`
+- Modulus: `m = 4294967296` ((2^{32}))
+
+The initial seed is obtained from the system clock. Each generated state is reduced modulo 10 to produce a decimal digit.
+
