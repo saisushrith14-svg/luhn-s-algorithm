@@ -17,7 +17,25 @@ The goal of this project is to understand:
 - Generating a valid check digit
 - Basic Git and project development workflow
 
-## Planned Structure
+## Current Features
+
+### Luhn Validator
+
+`check.cpp` takes a number as input and checks whether it passes the
+Luhn algorithm.
+
+The program:
+
+1. Reads a number from the user.
+2. Processes the digits from right to left.
+3. Doubles every second digit.
+4. Reduces doubled values greater than 9.
+5. Calculates the checksum.
+6. Checks whether the checksum is divisible by 10.
+
+If the checksum is divisible by 10, the number is considered valid.
+
+## Project Structure
 
 ```text
 luhn/
