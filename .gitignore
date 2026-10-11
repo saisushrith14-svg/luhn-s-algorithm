@@ -1,0 +1,6 @@
+check
+random_gen
+luhn_gen
+*.o
+*.out
+.DS_Store
