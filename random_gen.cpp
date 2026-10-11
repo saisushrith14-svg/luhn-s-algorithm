@@ -21,11 +21,3 @@ std::vector<int> gen(int nd){
     }
     return Arr;
 }
-
-int main(){
-    for(int x : gen(10000)){
-        std::cout << x;
-    }
-    std::cout << std::endl; 
-    return 0;
-}

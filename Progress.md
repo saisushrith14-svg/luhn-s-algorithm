@@ -82,3 +82,20 @@ Current parameters:
 
 The initial seed is obtained from the system clock. Each generated state is reduced modulo 10 to produce a decimal digit.
 
+
+## Commit 3 — Luhn Number Generator
+
+### Status
+
+implementation completed
+
+### What I did
+
+- Created `luhn_gen.cpp`
+- Reused the pseudo-random digit generator
+- Built a number from the generated digits
+- Implemented check-digit calculation using the Luhn checksum
+- Appended the calculated check digit to the generated number
+
+* [x] Verify generated numbers using the Luhn validator
+* [x] Test different requested lengths

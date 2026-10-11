@@ -1,12 +1,8 @@
 #include <iostream>
-int main()
+int check(long num)
 {
-    std::cout << "Enter the Number: " << std::endl;
-
-    int num;
-    std::cin >> num;
-    int temp = num;
-    int a = 1,s=0;
+    long temp = num;
+    int a = 0,s=0;
     while (temp>0)
     {
         if (a%2==0){
@@ -26,11 +22,13 @@ int main()
         a++;
     }
     if (s%10==0){
-        std::cout <<"Valid";
-        return 1;
+        return 0;
     }
     else{
-        std::cout <<"Not Valid";
-        return 0;
+        int n=1;
+        while((s+n)%10!=0){
+            n++;
+        }
+        return n;
     }
 }
