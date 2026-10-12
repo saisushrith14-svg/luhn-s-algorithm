@@ -7,10 +7,10 @@
 - [x] Understand pseudo-random number generation
 - [x] Implement a pseudo-random number generator without `<random>`
 - [x] Generate a sequence of digits
-- [ ] Calculate the Luhn check digit
-- [ ] Generate complete Luhn-valid numbers
-- [ ] Test generated numbers with the validator
-- [ ] Improve the project structure
+- [x] Calculate the Luhn check digit
+- [x] Generate complete Luhn-valid numbers
+- [x] Test generated numbers with the validator
+- [x] Improve the project structure
 
 ---
 
