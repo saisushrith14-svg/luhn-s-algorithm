@@ -2,7 +2,7 @@
 int check(long num)
 {
     long temp = num;
-    int a = 0,s=0;
+    int a = 1,s=0;
     while (temp>0)
     {
         if (a%2==0){

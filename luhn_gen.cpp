@@ -5,7 +5,7 @@ int main(){
     std::cout << "Enter the number of Digits: " ;
     int nd;
     std::cin >> nd;
-    long number=1;
+    long number=0;
     for(int x : gen(nd-1)){
         number = number*10 + x;
     }
